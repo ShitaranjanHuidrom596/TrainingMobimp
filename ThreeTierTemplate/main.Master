@@ -26,6 +26,7 @@
             </asp:ContentPlaceHolder>
         </div>
     </form>
+    <div id ="footer" class="w-[100%] h-[60px] bg-[#34d399] fixed bottom-0 p-5 text-center">Mobimp pvt.</div>
     <script>
         var delete_id = "";
    

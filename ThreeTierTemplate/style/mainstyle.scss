@@ -1,5 +1,6 @@
 ﻿$nav-background-coclor:#475569;
-$register-background-color:#27272a;
+$register-background-color:black;
+//$register-background-color:#27272a;
 
 
 body {
@@ -33,6 +34,13 @@ nav{
     }
 }
 
+#footer{
+    height:100px;
+    width:100px;
+    background-color:#34d399;
+}
+
+// Registration page style
 #register_container{
    display:flex;
    align-items:center;
