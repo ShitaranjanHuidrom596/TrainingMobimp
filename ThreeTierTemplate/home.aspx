@@ -3,4 +3,5 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="main_container" runat="server">
     <h1>This is home page This page is under construction</h1>
+    This is some text
 </asp:Content>

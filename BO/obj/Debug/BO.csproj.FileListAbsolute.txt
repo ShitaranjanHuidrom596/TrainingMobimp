@@ -11,3 +11,16 @@ D:\Training\BO\obj\Debug\BO.csproj.CoreCompileInputs.cache
 D:\Training\BO\obj\Debug\BO.csproj.CopyComplete
 D:\Training\BO\obj\Debug\BO.dll
 D:\Training\BO\obj\Debug\BO.pdb
+B:\intern\training\Development\BO\bin\Debug\BO.dll
+B:\intern\training\Development\BO\bin\Debug\BO.pdb
+B:\intern\training\Development\BO\bin\Debug\DA.dll
+B:\intern\training\Development\BO\bin\Debug\Data.dll
+B:\intern\training\Development\BO\bin\Debug\Commno.dll
+B:\intern\training\Development\BO\bin\Debug\Data.pdb
+B:\intern\training\Development\BO\bin\Debug\DA.pdb
+B:\intern\training\Development\BO\bin\Debug\Commno.pdb
+B:\intern\training\Development\BO\obj\Debug\BO.csproj.AssemblyReference.cache
+B:\intern\training\Development\BO\obj\Debug\BO.csproj.CoreCompileInputs.cache
+B:\intern\training\Development\BO\obj\Debug\BO.csproj.CopyComplete
+B:\intern\training\Development\BO\obj\Debug\BO.dll
+B:\intern\training\Development\BO\obj\Debug\BO.pdb

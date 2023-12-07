@@ -9,3 +9,14 @@ D:\Training\DA\obj\Debug\DA.csproj.CoreCompileInputs.cache
 D:\Training\DA\obj\Debug\DA.csproj.CopyComplete
 D:\Training\DA\obj\Debug\DA.dll
 D:\Training\DA\obj\Debug\DA.pdb
+B:\intern\training\Development\DA\bin\Debug\DA.dll
+B:\intern\training\Development\DA\bin\Debug\DA.pdb
+B:\intern\training\Development\DA\bin\Debug\Commno.dll
+B:\intern\training\Development\DA\bin\Debug\Data.dll
+B:\intern\training\Development\DA\bin\Debug\Commno.pdb
+B:\intern\training\Development\DA\bin\Debug\Data.pdb
+B:\intern\training\Development\DA\obj\Debug\DA.csproj.AssemblyReference.cache
+B:\intern\training\Development\DA\obj\Debug\DA.csproj.CoreCompileInputs.cache
+B:\intern\training\Development\DA\obj\Debug\DA.csproj.CopyComplete
+B:\intern\training\Development\DA\obj\Debug\DA.dll
+B:\intern\training\Development\DA\obj\Debug\DA.pdb
