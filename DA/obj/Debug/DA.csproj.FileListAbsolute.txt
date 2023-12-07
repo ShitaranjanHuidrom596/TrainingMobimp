@@ -1,0 +1,11 @@
+D:\Training\DA\bin\Debug\DA.dll
+D:\Training\DA\bin\Debug\DA.pdb
+D:\Training\DA\bin\Debug\Commno.dll
+D:\Training\DA\bin\Debug\Data.dll
+D:\Training\DA\bin\Debug\Commno.pdb
+D:\Training\DA\bin\Debug\Data.pdb
+D:\Training\DA\obj\Debug\DA.csproj.AssemblyReference.cache
+D:\Training\DA\obj\Debug\DA.csproj.CoreCompileInputs.cache
+D:\Training\DA\obj\Debug\DA.csproj.CopyComplete
+D:\Training\DA\obj\Debug\DA.dll
+D:\Training\DA\obj\Debug\DA.pdb

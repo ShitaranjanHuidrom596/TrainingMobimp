@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="ThreeTierTemplate.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="./style/mainstyle.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+<body>
+<nav>
+    <div>
+        <img src="./Images/schoollg.png" alt="Alternate Text" />
+    </div>
+    <div><a href="home.aspx">Home</a></div>
+    <div><a href="details.aspx">Search</a></div>
+    <div><a href="register.aspx">Register</a></div>
+</nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="main_container" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <div id ="footer" class="w-[100%] h-[60px] bg-[#34d399] fixed bottom-0 p-5 text-center">Mobimp pvt.</div>
+    <script>
+        var delete_id = "";
+   
+        const validate = () => {
+            console.log("Halt");
+        }
+
+        const check_del = () => {
+            if (confirm("Are you sure want to delete this student")) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+
+        const showsearch=() => {
+            var search_txt_box = $('#name_search');
+            if (search_txt_box.val() != "") {
+                $('#search_stud_button').css({ "display": "block" });
+            }
+            else {
+                $('#search_stud_button').css({ "display": "none" });
+            }
+        }
+
+        const delete_stud_yes = (e) => {
+            //$('#delete_modal').css({ "display": "none" });
+            $('#form1').submit();
+            return true;
+        }
+
+        const delete_stud_no = (e) => {
+            $('#delete_modal').css({ "display": "none" });
+            return false;
+        }
+    </script> 
+</body>
+</html>
