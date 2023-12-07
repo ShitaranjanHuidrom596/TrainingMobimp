@@ -26,5 +26,42 @@
             </asp:ContentPlaceHolder>
         </div>
     </form>
+    <script>
+        var delete_id = "";
+   
+        const validate = () => {
+            console.log("Halt");
+        }
+
+        const check_del = () => {
+            if (confirm("Are you sure want to delete this student")) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+
+        const showsearch=() => {
+            var search_txt_box = $('#name_search');
+            if (search_txt_box.val() != "") {
+                $('#search_stud_button').css({ "display": "block" });
+            }
+            else {
+                $('#search_stud_button').css({ "display": "none" });
+            }
+        }
+
+        const delete_stud_yes = (e) => {
+            //$('#delete_modal').css({ "display": "none" });
+            $('#form1').submit();
+            return true;
+        }
+
+        const delete_stud_no = (e) => {
+            $('#delete_modal').css({ "display": "none" });
+            return false;
+        }
+    </script> 
 </body>
 </html>

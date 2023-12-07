@@ -74,8 +74,8 @@
   <ItemGroup>
     <Content Include="AddAddress.aspx" />
     <Content Include="details.aspx" />
-    <Content Include="home.aspx" />
     <Content Include="edit.aspx" />
+    <Content Include="home.aspx" />
     <Content Include="style\mainstyle.css">
       <DependentUpon>mainstyle.scss</DependentUpon>
     </Content>
