@@ -2,5 +2,5 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="main_container" runat="server">
-    <h1>This is home page This page is under construction</h1>
+    <h1>content</h1>
 </asp:Content>
