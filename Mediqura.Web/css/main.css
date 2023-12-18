@@ -1,0 +1,330 @@
+﻿/* input[type="password"] {
+  color: transparent;
+} */
+
+.select.form-control:not([size]):not([multiple]) {
+    height: calc(2rem + 1px) !important;
+}
+
+
+
+.col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 30.333333%;
+    max-width: 30.333333%;
+}
+
+
+@media only screen and (max-width:768px) {
+    .col-4 {
+        -ms-flex: 0 0 80.333333%;
+        flex: 0 0 80.333333%;
+        max-width: 80.333333%;
+        margin: 0 auto !important
+    }
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+
+@font-face {
+    /*font-family: 'Poppins-Regular';*/
+    src: url('../../../fonts/poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    /*font-family: Poppins-Medium;*/
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    /*font-family: Poppins-Bold;*/
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    /*font-family: Poppins-SemiBold;*/
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    /*font-family: Poppins-Regular, sans-serif;*/
+}
+
+/*---------------------------------------------*/
+a {
+    /*	font-family: Poppins-Regular; */
+    /*	font-size: 13px;
+	line-height: 1.7; */
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+    a:focus {
+        outline: none !important;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #f79b36;
+    }
+
+/*---------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+p {
+    /* font-family: Poppins-Regular; */
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+}
+
+ul, li {
+    margin: 0px;
+    list-style-type: none;
+}
+
+
+/*---------------------------------------------*/
+input {
+    outline: none;
+    border: none;
+}
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+        appearance: none;
+        -webkit-appearance: none;
+    }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+
+textarea {
+    outline: none;
+    border: none;
+}
+
+    textarea:focus, input:focus {
+        border-color: #666666 !important;
+    }
+
+        input:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+
+        input:focus:-moz-placeholder {
+            color: transparent;
+        }
+
+        input:focus::-moz-placeholder {
+            color: transparent;
+        }
+
+        input:focus:-ms-input-placeholder {
+            color: transparent;
+        }
+
+        textarea:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+
+        textarea:focus:-moz-placeholder {
+            color: transparent;
+        }
+
+        textarea:focus::-moz-placeholder {
+            color: transparent;
+        }
+
+        textarea:focus:-ms-input-placeholder {
+            color: transparent;
+        }
+
+input::-webkit-input-placeholder {
+    color: #999999;
+}
+
+input:-moz-placeholder {
+    color: #999999;
+}
+
+input::-moz-placeholder {
+    color: #999999;
+}
+
+input:-ms-input-placeholder {
+    color: #999999;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #999999;
+}
+
+textarea:-moz-placeholder {
+    color: #999999;
+}
+
+textarea::-moz-placeholder {
+    color: #999999;
+}
+
+textarea:-ms-input-placeholder {
+    color: #999999;
+}
+
+
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.label-input100 {
+    /*font-family: Poppins-Regular;*/
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.2;
+    text-align: right;
+    position: absolute;
+    top: 14px;
+    left: -105px;
+    width: 90px;
+}
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+
+
+.float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #ffc107;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 999;
+}
+
+.my-float {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: #0c5460;
+}
+
+
+.carousel-indicators .active {
+    background-color: #ffc107;
+}
+
+
+
+.drop {
+    margin-top: -2em;
+    /*font-family: Poppins-Regular;*/
+    font-size: 12px;
+    padding: 5px;
+    min-width: 260px;
+    margin-left: -3.8em;
+    margin-bottom: 1em;
+    border-color: rgba(33, 37, 41, 0.25098039215686274);
+}
+
+@media only screen and (max-width:768px) {
+    .drop {
+        margin-top: -2em;
+        /*font-family: Poppins-Regular;*/
+        font-size: 12px;
+        padding: 5px;
+        min-width: 260px;
+        margin-left: -3.8em;
+        margin-bottom: 1em;
+    }
+}
+
+.gridpager a {
+    padding: 8px;
+    height: 10px;
+    color: blue;
+}
+
+    .gridpager a:hover {
+        color: orange;
+    }
+
+tr.gridpager {
+    background-color: transparent !important;
+}
+
+.gridpager span {
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: #155bae;
+    border-radius: 50%;
+    position: inherit;
+    color: white;
+}
+
+.pagi {
+    background-color: green;
+}
+
+.headerSortUp {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url('../../sortingimage/asc.gif');
+    background-color: #e9e7d7;
+}
+
+.headerSortDown {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url('../../sortingimage/desc.gif');
+    background-color: #e9e7d7;
+}
+

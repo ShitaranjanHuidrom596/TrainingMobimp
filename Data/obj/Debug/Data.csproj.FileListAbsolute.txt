@@ -1,6 +1,0 @@
-D:\Training\Data\bin\Debug\Data.dll
-D:\Training\Data\bin\Debug\Data.pdb
-D:\Training\Data\obj\Debug\Data.csproj.AssemblyReference.cache
-D:\Training\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
-D:\Training\Data\obj\Debug\Data.dll
-D:\Training\Data\obj\Debug\Data.pdb

@@ -1,0 +1,211 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OnlineReportMst.master.cs" Inherits="Mediqura.Web.OnlineReportMst" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <%--   <meta name="viewport" content="width=device-width, initial-scale=1">--%>
+    <title>MEDIQURA</title>
+     <link href="DashboardCss/bootstrap.min.css" rel="stylesheet" />
+    <link href="Styles/responsive.bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-footable/0.1.0/css/footable.min.css"rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-footable/0.1.0/js/footable.min.js"></script>
+
+
+    <style>
+        a {
+            color: white;
+        }
+
+        .main-container {
+            margin: 20px;
+        }
+
+        .mt-20 {
+            margin-top: 20px;
+        }
+
+        .mt-5 {
+            margin-top: 10px;
+        }
+
+        .card_wrapper {
+            padding: 15px;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.08) !important;
+            border-radius: 4px;
+            background-color: #ffffff !important;
+        }
+
+        .gridpager a {
+            padding: 8px;
+            height: 10px;
+            color: blue;
+        }
+
+            .gridpager a:hover {
+                color: orange;
+            }
+
+        tr.gridpager {
+            background-color: transparent !important;
+        }
+
+        .gridpager span {
+            padding: 5px 10px;
+            font-weight: bold;
+            background-color: #155bae;
+            border-radius: 50%;
+            position: inherit;
+            color: white;
+        }
+
+
+
+        .ajax__calendar .ajax__calendar_container {
+            border: 1px solid #d7e8fb !important;
+            background-color: #ffffff;
+            color: #000000;
+            z-index: 9;
+            border-radius: 4px;
+            width: 220px !important;
+        }
+
+        .ajax__calendar_days, .ajax__calendar_months, .ajax__calendar_years {
+            width: 100% !important;
+        }
+
+        .ajax__calendar_body {
+            width: 100% !important;
+            height: 140px !important;
+            /*    overflow: unset !important; */
+        }
+
+        .ajax__calendar_container TABLE {
+            width: 100% !important;
+        }
+
+        .ajax__calendar_title {
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 5px;
+            display: inline;
+            top: 7px;
+            position: relative;
+            background-color: #2e3192;
+            color: #ffffff !important;
+        }
+
+        .ajax__calendar_header {
+            height: 35px !important;
+            width: 100%;
+        }
+
+        .ajax__calendar_prev {
+            width: 19px;
+            height: 19px;
+            top: 5px;
+            position: relative;
+        }
+
+        .ajax__calendar_next {
+            width: 19px;
+            height: 19px;
+            position: relative;
+            top: 5px;
+        }
+
+        .ajax__calendar_dayname {
+            height: 20px !important;
+            width: auto !important;
+            text-align: center !important;
+            font-weight: 600;
+            padding: 0px !important;
+            color: #5d60ab;
+        }
+
+        .ajax__calendar_title:hover {
+            background-color: #f47b20;
+            border-radius: 4px;
+        }
+
+        tbody#CampusoftPlaceholder_CalendarExtender1_daysBody > tr > td {
+            /*  background: #c76464 !important; */
+        }
+
+        td.ajax__calendar_other {
+            padding: 0px;
+        }
+
+        .ajax__calendar .ajax__calendar_other .ajax__calendar_day {
+            /*  background-color: #f90707 !important; */
+            border-color: #ffffff;
+            color: #646464;
+            padding: 1px 8px !important;
+            width: auto !important;
+            height: 20px !important;
+            border-radius: 50%;
+        }
+
+        .ajax__calendar_day {
+            text-align: right;
+            cursor: pointer;
+            padding: 1px 8px !important;
+            width: auto !important;
+            height: 20px !important;
+            border-radius: 50%;
+        }
+
+
+        .ajax__calendar .ajax__calendar_footer {
+            /* border-top: 1px solid #f5f5f5; */
+            margin-top: 10px;
+            display: inline-block;
+            background: #2e3192;
+            padding: 2px 6px;
+            height: 21px;
+            border-radius: 4px;
+            color: #ffffff;
+        }
+
+            .ajax__calendar .ajax__calendar_footer:hover {
+                background-color: #f47b20;
+                color: #ffffff !important;
+            }
+    
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server"></asp:ScriptManager>
+        <div>
+            <nav class="container-fluid" style="background-color:darkslategrey;margin:0" >
+                <div class="">
+                    <!--Navbar Header Start Here-->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img style="width:70px;height:25px;" src='<%= this.ResolveClientUrl("Images/logo.png") %>' alt=""></a>                      
+                    </div>
+                    <!--Navbar Header End Here-->
+                    <!--Menu Start Here-->
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Dashboard</a></li>
+                        <li ><a href="#">Report Collection</a></li>
+                    </ul>
+                    <!--Menu End Here-->
+                </div>
+            </nav>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
